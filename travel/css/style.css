@@ -1,0 +1,266 @@
+/*Styles for my travel website*/
+/* Notes:
+   * (aka star) is the universal selector
+    Padding creates extra space within an element, while margin creates extra space around an element!
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*非常重要！！*/
+    
+/*
+By default, the width and height of an element is calculated like this:
+width + padding + border = actual width of an element
+height + padding + border = actual height of an element
+
+This means: When you set the width/height of an element, the element often appears bigger than you have set (because the element's border and padding are added to the element's specified width/height).
+
+The box-sizing property allows us to include the padding and border in an element's total width and height.
+*/
+    
+}
+
+a {
+    color: #666;
+}
+
+body {
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: 100%; /*只要改這裡來改文字的大小就好，不用改最後的h1, h2...size*/
+}
+
+div#wrapper {
+    width: 940px;
+    margin: 20px auto;
+    
+}
+
+header {
+    margin-bottom: 17px;
+   
+}
+
+#logo {
+    display: inline; /*just make the logo hot only*/
+}
+
+nav {
+    height: 50px;
+    line-height: 50px;
+    background: #05a;
+}
+
+nav ul {
+    list-style-type: none; /*step 1*/
+    
+}
+
+nav li {
+    float: left; /*step 2*/
+    width: 20%; /*100% is divided by number of items*/
+    text-align: center; /*step 3*/
+    font-size: 0.9em;
+    
+}
+
+nav a {
+    text-decoration: none;
+    display: block; /*重要！！*/
+    color: #fff;
+    
+}
+
+nav a:hover { /*重要！！*/
+    background: #028;
+}
+
+nav#secondary {
+    height: auto;
+}
+
+nav#secondary li {
+    float: none;
+    width: auto;
+    text-align: left;
+}
+
+nav#secondary a {
+    padding-left: 20px;
+}
+
+
+.home nav li:nth-child(1) a,
+.about nav li:nth-child(2) a,
+.tours nav li:nth-child(3) a,
+.promos nav li:nth-child(4) a,
+.contact nav li:nth-child(5) a{
+    background: #028; 
+}
+
+.tours nav#secondary li a {
+    background: #05a;
+    
+}
+
+.tours nav#secondary li a:hover {
+     background: #028; 
+}
+
+
+div#banner {
+    background: green;
+}
+
+main {
+    margin-top: 20px;
+    width: 580px;
+    float: left;
+    margin-bottom: 20px;
+    
+}
+
+.container {
+    clear: both;
+    margin-bottom: 20px;
+    overflow: hidden; /*add space below the container*/
+}
+
+.third {
+    width: 300px;
+    float: left;
+    border: 1px solid red;
+    padding: 15px 15px 0 15px;
+    
+}
+
+.third:nth-child(1), 
+.third:nth-child(2) {
+    margin-right: 20px;
+    
+}
+
+p + ul { /*if my ul is following a paragraph*/
+    margin: -15px 0 18px 30px;
+}
+
+aside {
+    margin-top: 30px;
+    background: white;
+    width: 340px;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.tours aside {
+    border: 1px solid red;
+    padding: 10px;
+}
+
+figure {
+ margin-bottom: 10px;   
+}
+
+figcaption {
+    background: #000;
+    color: #fff; /*text color*/
+    font-size: .8em; /*13px也可以*/
+    font-style: italic;
+    padding: 8px;
+}
+
+footer {
+    font-size: 0.875em; /*do it here in the container*/
+    height: 50px;
+    line-height: 50px;
+    
+    border-top: 1px dotted #666;
+    clear: both; /*Always clear the footer, so it doesn't break! Both means left and right*/
+    
+}
+
+footer ul {
+    list-style-type: none; /*get rid of the dots in front of the list items*/
+    float: right;
+    
+}
+/*Don't forget that list items are block level elements, and if you would like them to be displayed horizontally, float them.*/
+footer li {
+    float: left;
+    margin-left: 30px;
+    color: #666;
+}
+
+footer a {
+    color: #666;
+}
+
+
+img {
+    display: block;
+    max-width: 100%; /*make sure the images fit in the container*/
+}
+
+
+
+/*++++Typography++++*/
+/*1em = 16px*/
+/*Use this site: https://type-scale.com/*/
+
+h1, h2, h3, h4 {
+    margin-bottom: 8px;
+    font-family: times, serif;
+    line-height: 1.1; /*the number here is multiplied with the current font-size to set the line height*/
+    
+}
+
+h1 {
+    font-size: 2.488em;
+    font-weight: 200;
+    color: #05a;
+}
+
+h2 {
+    font-size: 2.074em;
+    color: #555;
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 1.728em;
+    color: #666;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+h4 {
+    font-size: 1.44em;
+    color: #666;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.third p {
+    font-size: 0.9em;
+}
+
+aside p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+blockquote {
+    margin-bottom: 20px;
+    font-size: 1.424em;
+    font-style: italic; /*typography (字體設計)*/
+    border-left: 30px solid #05a;
+    padding-left: 30px;
+}
+
+
+    
+

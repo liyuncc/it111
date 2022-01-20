@@ -1,0 +1,150 @@
+/*styles for my form assignment website*/
+/**/
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*I will be adding padding to the body for demo purposes only. Remove this when you start working on hw assignment. */
+
+body {
+    background: beige;
+}
+
+/*Website styles*/
+
+#wrapper {
+    width: 940px;
+    margin: 0 auto;
+}
+
+header {
+    
+}
+
+
+main {
+    width: 580px;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+   
+    
+}
+
+aside {
+    width: 340px;
+    float: right;
+   
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/*Form styles*/
+form {
+    max-width: 580px; /*can fit in main or aside tag*/
+   
+}
+
+fieldset {
+    padding: 10px;
+}
+
+legend {
+    font-size: 1.3em;
+    font-style: italic;
+    padding: 0 4px;
+    color: green;
+}
+
+label {
+    display: block; /*make the fill-in box below the name*/
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px; /*make it consistent*/
+   
+}
+
+input[type=radio],
+input[type=checkbox]{
+    width: auto;
+    height: auto;
+    margin-right: 5px;
+}
+
+input[type=submit] {
+    /*width auto is to make the bottom as big/long as the words I type*/
+    font-size: 20px;
+    font-style: oblique;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+}
+
+
+textarea {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px; /*make it consistent*/
+}
+
+select {
+    margin-bottom: 10px;
+}
+
+form ul {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+form li {
+    list-style-type: none;
+}
+
+footer {
+    font-size: 0.875em;
+    height: 50px;
+    line-height: 50px;
+    clear: both;
+    background: lightblue;
+}
+
+footer ul {
+    list-style-type: none;
+    float: right;
+}
+
+footer li {
+    float: left;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+
+h3 {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-left: 15px;
+    font-size: 1.728em;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    line-height: 1.4;
+}

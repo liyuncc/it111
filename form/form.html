@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Form Classwork</title>
+<link href="css/styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <!--method chooses post because it is secure -->
+    <form action="formhandler.php" method="post">
+        <fieldset>
+            <legend>Contact Olga</legend>
+            <label>Name</label>
+            <input type="text" name="name">
+            <label>Email</label>
+            <input type="email" name="email">
+            <label>Payment</label>
+                <ul>
+                <li><input type="radio" name="payment" value="mastercard">Mastercard</li>
+                <li><input type="radio" name="payment" value="visa">Visa</li>
+                <li><input type="radio" name="payment" value="AMX">AMX</li>
+                <li><input type="radio" name="payment" value="discover">Discover</li>    
+                </ul>
+            <label>Favorite Wines</label>
+                <ul>
+                <li><input type="checkbox" name="wines[]" value="cab">Cabernet</li>
+                <li><input type="checkbox" name="wines[]" value="merlot">Merlot</li>
+                <li><input type="checkbox" name="wines[]" value="syrah">Syrah</li>
+                <li><input type="checkbox" name="wines[]" value="blend">Red Blend</li>
+            
+            
+                </ul>
+            <label>Regions</label>
+                <select name="regions">
+                    <option value="nw">Northwest</option>
+                    <option value="sw">Southwest</option>
+                    <option value="midwest">Midwest</option>
+                    <option value="so">South</option>
+                    <option value="ne">Northest</option>
+                    <option value="se">Southest</option>
+                    <option value="we">West</option>
+            
+                </select>
+            <label>Comments</label>
+            <textarea name="comments"></textarea>
+            <input type="submit" value="Send it now!!">
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>

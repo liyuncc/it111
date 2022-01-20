@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Our first class exercise</title>
+<style>
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+/*        background: tan;*/
+        background-image: url(images/seahawks.png);
+/*        background-repeat: repeat-y;*/
+        background-attachment: fixed;
+        
+        font-size: 100%;
+        font-family: Verdana, Helvetica, arial, sans-serif;
+        color: white;
+    }
+    
+    h1 {
+        color: red;
+        margin-bottom: 7px;
+/*        font-size: 48px;*/
+/*        I'm going to declare font-size in "ems". 1em = 16px*/
+        font-size: 3em;
+    }
+    
+    h2 {
+        color: #ffff00;
+        margin-bottom: 7px;
+        font-size: 2em;
+    }
+    
+    h3 {
+        
+        margin-bottom: 7px;
+        /* 0 equals absence of color. As we increase our numbers, black becomes less black, becomes grey, and eventually becomes whilte. */
+        /* 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f */
+        /* from 0 to f: from the darkest of black to lighter... until it's white */
+        font-size: 1.5em;
+    }
+    
+    p, hr, blockquote, dl {
+        margin-bottom: 20px;
+    }
+    
+    ul, ol {
+        margin: 0 0 20px 30px;
+    }
+    
+    dt {
+        font-weight: bold;
+    }
+    
+    dd {
+        font-style: italic;
+        margin-bottom: 8px;
+    }
+    
+    div#wrapper { 
+/* div DIVIDES the page */
+        
+        width: 940px;
+        margin: 30px auto; 
+        /* To center a box or a block level element, use margin 0 auto */
+        border: 1px solid #ccc;
+        padding: 20px;
+        /* Add padding will make the box bigger */
+/*        light green*/
+        background: #00ff00;
+        
+        background: rgba(100, 100, 0, .90); /* a means opacity 
+/*        NEVER USE opacity: .75;*/
+    }
+    
+    img {
+        float: right;
+        border: 5px red solid;
+        /* You will need 3 values for your border: width, color and type of the border*/
+        padding: 20px;
+/* 重要：padding is INSIDE the element VS margin is OUTSIDE the element */
+        margin: 0 0 20px 30px; /* top, right, bottom, left*/
+        background: lightcyan;
+    }
+    
+    
+    a {
+        color: beige;
+    }
+</style>
+    
+    
+    
+    
+    
+</head>
+
+<body>
+<div id="wrapper">
+    <h1>This is our first class exercise!</h1>
+<!-- You can only have 1 <h1> tag - you can have several <h2>, <h3> tags-->
+<!-- There are 6 headlines in the world of HTML-->
+    <h2>This is my headline 2</h2>
+    <img src="images/profile.jpg" alt="Picture of Liyun">
+<!-- Image tag is an INLINE element, so you can't center an image the normal way-->
+<!-- Don't forget the image tag self closes, and it is the img, the attribute is src, and the value is the name of the image-->
+    <p><b>Lorem ipsum dolor sit amet, </b>consectetur adipiscing elit. Aenean ac pharetra metus. Nunc ornare, est quis auctor pulvinar, nisl erat pulvinar nibh, vitae vulputate nunc ante varius risus. Nulla blandit sapien et mi pellentesque porttitor. Pellentesque nibh justo, vestibulum vel tincidunt et, scelerisque eget dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi elit augue, semper sed ligula vitae, tristique fringilla mauris. Integer vitae interdum risus. Aenean tempor volutpat consequat. Pellentesque mattis aliquam massa, ac consectetur lorem commodo in.</p>
+    
+    <p><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipiscing elit. Aenean ac pharetra metus. Nunc ornare, est quis auctor pulvinar, nisl erat pulvinar nibh, vitae vulputate nunc ante varius risus. Nulla blandit sapien et mi pellentesque porttitor. <em>Pellentesque nibh justo</em>, vestibulum vel tincidunt et, scelerisque eget dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi elit augue, semper sed ligula vitae, tristique fringilla mauris. Integer vitae interdum risus. Aenean tempor volutpat consequat. Pellentesque mattis aliquam massa, ac consectetur lorem commodo in.</p>
+    
+    <blockquote>
+    "Nulla blandit sapien et mi pellentesque porttitor. <em>Pellentesque nibh justo</em>, vestibulum vel tincidunt et, scelerisque eget dui."
+    </blockquote>
+    
+    <hr>
+<!-- <hr> tag represents a horizontal rule - a line-->
+    
+    <h3>Here's my shopping list</h3>
+    <ul> 
+<!-- unordered list-->
+        
+    <li>Milk</li>
+    <li>Eggs</li>
+    <li>Cheese
+        <ul>
+        <li>Sharp Cheddar</li>
+        <li>Brie</li>
+        <li>Mozzarella</li>
+        <li>Provalone</li>
+        </ul>      
+    </li>
+    <li>Wine
+<!-- We're nesting a brand-new unordered list of different wines     -->
+        <ul>
+        <li>Cabernet</li>
+        <li>Malbec</li>
+        <li>Syrah</li>
+        <li>Merlot</li> 
+        </ul> 
+<!-- ul ending my different wines-->
+         
+    </li>
+         
+    <li>Chips</li>
+    <li>Salsa</li>
+    </ul>
+    
+    
+    <ol> 
+<!-- ordered list-->
+        
+    <li>Milk</li>
+    <li>Eggs</li>
+    <li>Cheese</li>
+   
+    <li>Chips</li>
+    <li>Salsa</li>
+        
+    </ol>
+    
+    <h3>My Definition List</h3>
+    
+<!-- <dl> is like a piece of papar-->
+    <dl>
+    <dt>HTML</dt>
+    <dd>HTML stands for Hyper Text Markup Language - the language for website design and development</dd>
+    
+    <dt>CSS</dt>
+    <dd>CSS stands for Cascading Style Sheets - representing the "look and feel" of a website </dd>
+        
+    <dt>PHP</dt>
+    <dd>PHP stands for Hypertext Preprocessing Language (FYI - it originally was called Personal Home Page) - you will be able to build a dynamic website with PHP. Also PHP is server side language.</dd>
+    </dl>
+    
+    
+    
+    <h3>Favorite Movies/shows</h3>
+    <ul>
+<!-- The list items are block level elements, while the anchor and italic elements are an inline element-->
+    <li><i><a href="https://www.imdb.com/title/tt8637428/?ref_=fn_al_tt_1">The Farewell</a></i></li>
+    <li><i><a href="https://www.imdb.com/title/tt6966692/">The Green Book</a></i></li>
+    <li><i><a href="https://www.imdb.com/title/tt5580036/?ref_=fn_al_tt_1">I, Tonya</a></i></li>
+    
+    </ul>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac pharetra metus. Nunc ornare, est quis auctor pulvinar, nisl erat pulvinar nibh, vitae vulputate nunc ante varius risus. Nulla blandit sapien et mi pellentesque porttitor. Pellentesque nibh justo, vestibulum vel tincidunt et, scelerisque eget dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi elit augue, semper sed ligula vitae, tristique fringilla mauris. Integer vitae interdum risus. Aenean tempor volutpat consequat. Pellentesque mattis aliquam massa, ac consectetur lorem commodo in.</p>
+    
+    <h3>List of Assignments!</h3>
+    <ul>
+        <li><a href="">Assignment 2 - Stranger Things</a></li>
+        <li><a href="">Assignment 3 - BIG</a></li>
+    
+    
+    
+    </ul>
+<!-- Do not use the following tags:
+1. <br>
+2. <u> means underline
+
+-->
+    
+</div>
+    
+    <p><a href="https://validator.w3.org/check?uri=referer">Valid!!!!</a></p>
+    
+</body>
+</html>

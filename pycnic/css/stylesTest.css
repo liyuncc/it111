@@ -1,0 +1,261 @@
+/*Styles for Pycnic Website*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: Verdana, Helvetica, Arial, sans-serif, aktiv-grotesk; /*client will choose a font she likes*/
+    font-size: 100%;
+    background-image: url(../images/homepage.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+
+}
+
+
+div#wrapper {
+    width: 940px;
+    margin: 20px auto;  
+}
+
+header a#pycnic {
+    font-weight: 900;
+    font-size: 1.563em; /*smaller*/
+    text-decoration: none;
+    color: #000;
+    
+}
+
+header a#pycnic:hover {
+    color: #fff;
+}
+
+header {
+    height: 60px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+nav {
+    height: 50px;
+    line-height: 50px;
+    font-weight: 700;
+    font-size: 1em;
+    margin-bottom: 40px;
+    width: 100%;
+   
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center; /*step 3*/
+
+}
+
+nav li {
+    float: left; /*step 2*/
+    width: 14.2%;
+    display: inline-block;
+    
+}
+
+nav a {
+    text-decoration: none;
+    display: block; /*重要！！*/
+    color: #000;
+       
+}
+
+nav a:hover {
+    color: #fff;
+    z-index: 1;
+}
+
+nav a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    opacity: 1;
+    
+}
+
+
+/* stroke */
+nav.stroke ul li a {
+    position: relative;
+}
+
+nav.stroke ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #fff;
+    height: 2px;
+}
+
+nav.stroke ul li a:hover:after {
+    width: 100%;
+}
+
+.home nav li:nth-child(1) a,
+.our-story nav li:nth-child(2) a,
+.products nav li:nth-child(3) a,
+.contact nav li:nth-child(4) a {
+    color: #fff;
+}
+/* end stroke */
+
+
+#social {
+    float: right;
+}
+
+#social ul {
+    
+}
+
+#social li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+main {
+    width: 520px;
+    height: 450px;
+    float: left;
+    
+}
+
+aside {
+    width: 400px;
+    height: 350px;
+    float: right;
+    margin-bottom: 20px;
+    
+}
+
+#our-story {
+    margin-bottom: 50px;
+}
+
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+iframe {
+    border: none;
+}
+
+footer {
+    clear: both;
+    margin-top: 100px;
+    border: 1px groove lightgray;
+   
+}
+
+footer ul {
+    margin-top: 10px;
+    list-style-type: none;
+    float: right;
+}
+
+footer li {
+    float: left;
+    margin-left: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+p {
+    line-height: 200%;
+}
+
+/*Fonts*/
+/*header, h1, h2, ..., p and so on*/
+
+
+/*Styles for Contact Form*/
+form {
+    max-width: 580px;
+    margin-bottom: 50px;
+}
+
+fieldset {
+    padding: 20px;
+}
+
+legend {
+    font-size: 1em;
+    font-style: italic;
+    padding 10px;
+
+}
+
+lable {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 10px; /*make it consistent*/
+   
+}
+
+input[type=submit] {
+    /*width auto is to make the bottom as big/long as the words I type*/
+    font-size: 1em;
+    font-style: oblique;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+    margin-bottom: 10px; /*make it consistent*/
+}
+
+
+form ul {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+form li {
+    list-style-type: none;
+}
